@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header class="top-header">
+        <nav>
+            <a class="nav-link" href="index.html">Strona główna</a>
+            <a class="nav-link" href="about-html.html">HTML</a>
+            <a class="nav-link" href="about-css.html">CSS</a>
+            <a class="nav-link" href="about-js.html">Java Script</a>
+        </nav>
+    </header>
+
+    <main>
+        <header id="top_header">
+            <h1>Hipertekstowy język znaczników</h1>
+        </header>
+
+
+        <section>
+            <h2>Wprowadzenie</h2>
+            <p>HTML (ang. HyperText Markup Language) – hipertekstowy język znaczników, wykorzystywany do tworzenia
+                dokumentów hipertekstowych. </p>
+            <p>Język pozwala opisać strukturę informacji zawartych wewnątrz strony internetowej, nadając odpowiednie
+                znaczenie semantyczne poszczególnym fragmentom tekstu – formując hiperłącza, akapity, nagłówki,
+                listy – oraz osadza w tekście dokumentu obiekty plikowe np. multimedia bądź elementy baz danych np.
+                interaktywne formularze danych. </p>
+            <p>HTML umożliwia określenie wyglądu dokumentu w przeglądarce internetowej. Do szczegółowego opisu
+                formatowania akapitów, nagłówków, użytych czcionek i kolorów, zalecane jest wykorzystywanie
+                kaskadowych arkuszy stylów. </p>
+        </section>
+        <section>
+            <h2>Więcej informacji</h2>
+            <article>
+                <h3>Znaczniki (tagi)</h3>
+                <p>Tag (znacznik) – znak lub słowo kluczowe przypisane do określonego fragmentu informacji, na przykład
+                    tekstu lub pliku multimedialnego. Tagi są powszechnie stosowane w bazach danych oraz przy opisywaniu
+                    informacji tekstowej. </p>
+                <p>W przypadku danych tekstowych znaczniki są stosowane do klasyfikowania fragmentów tekstu. Znaczniki,
+                    w odróżnieniu od komend programów komputerowych, są wplecione bezpośrednio w ciało informacji. Nie
+                    są one „wykonywane” i nie stanowią „poleceń”, lecz są osobną formą danych, umożliwiającą wykonywanie
+                    określonych działań na pozostałej informacji. Tagi mogą tworzyć struktury hierarchiczne oraz
+                    precyzować swoje znaczenie poprzez atrybuty. </p>
+                <p>Standaryzowane zbiory tagów oraz zasady ich stosowania to języki znaczników. Niektóre meta-języki
+                    znaczników (np. SGML lub XML) same nie mają znaczenia i służą jedynie ujednoliceniu zapisu kolejnych
+                    języków. Inne natomiast tworzone są z myślą o konkretnym zastosowaniu, przykładowo język HTML służy
+                    wyłącznie tworzeniu stron WWW, a język SVG – zapisowi grafiki wektorowej. Dzięki jednolitej składni
+                    większość języków znaczników łatwo jest przekształcić w pełne bazy danych lub formatować i
+                    prezentować dane na rozmaitych urządzeniach. </p>
+                <p> Znaczniki najczęściej są otoczone nawiasami ostrymi lub prostokątnymi. Atrybuty najczęściej
+                    określone są za pomocą nazwy oraz wartości otoczonej apostrofami lub cudzysłowami. </p>
+            </article>
+            <article>
+                <h3>Atrybuty</h3>
+                <p>Większość atrybutów elementów składa się z par nazwa-wartość, rozdzielonych znakiem "=", zawartych w
+                    znaczniku otwierającym elementu, po jego nazwie. Wartość może być zawarta w pojedynczych lub
+                    podwójnych cudzysłowach lub bez nich (o ile wartość nie zawiera spacji). W przeciwieństwie do
+                    atrybutów w postaci par nazwa-wartość istnieją atrybuty mające wpływ na element poprzez samo ich
+                    zawarcie w znaczniku otwierającym (np. ismap atrybut dla znacznika img). </p>
+                <p>Atrybut id nadaje elementowi unikatowy identyfikator. Może on zostać użyty przez arkusze stylów do
+                    sprecyzowania wyglądu tego elementu lub przez skrypty np. do zmiany jego zawartości. Atrybut class
+                    służy do sklasyfikowania elementów dla celów prezentacyjnych.</p>
+            </article>
+            <article>
+                <h3>Typy danych</h3>
+                <p>HTML definiuje kilka typów danych, wprowadzanych m.in. jako wartości elementów lub atrybutów. Są to
+                    m.in. skrypty (script data), dane arkuszy stylów (stylesheet data), identyfikatory, nazwy, adresy
+                    URI, liczby, jednostki miary długości, języki, deskryptory mediów, kolory, kodowania znaków, data i
+                    czas, itp.</p>
+            </article>
+            <article>
+                <h3>Deklaracja typu dokumentu</h3>
+                <p>Aby uaktywnić definicję typu dokumentu (DTD) do celów poprawnej walidacji utworzonej strony, a także
+                    w celu uniknięcia działania przeglądarek w trybie quirks, dokument powinien rozpoczynać się
+                    deklaracją typu dokumentu (nieformalnie DOCTYPE). DTD, do którego odwołuje się sekcja DOCTYPE,
+                    zawiera gramatykę i zasady wykorzystywania znaczników w dokumencie podporządkowanemu określonemu
+                    DTD. Większość graficznych przeglądarek korzysta z sekcji DOCTYPE, a także innych dodatkowych
+                    informacji, warunkując tryb renderowania danej strony. </p>
+                <p>Przykład:<br>
+                    !DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"<br>
+                    W HTML5:<br>
+                    !DOCTYPE html </p>
+            </article>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <p><a class="footer-link" href="#top_header">Strona domowa</a> <em>Paula Bipsum</em> o poznawanych technologiach
+            informatycznych. Strona developerska - tworzona w
+            celu poznawania terchnologi.<br>
+            Treści artykułów pobrane z <a class="footer-link"
+                href="https://pl.wikipedia.org/wiki/Wikipedia:Strona_g%C5%82%C3%B3wna">Wikipedii</a>, poddane
+            minimalnym zmianom.<br>
+            Pomysł na podstawie kursu <a class="footer-link" href="https://cotenfrontend.pl/">"WTF - Co ten
+                frontend"</a> który
+            prowadził Maciej Korsan.</p>
+    </footer>
+</body>
+
+</html>
