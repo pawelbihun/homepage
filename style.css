@@ -1,8 +1,9 @@
 body {
-  background: #204B57;
+  background: #204b57;
   color: white;
+  position: relative;
 }
-article {
+.article {
   /*background: #2e1760;*/
   /*background: #FFC6AC;*/
   box-sizing: border-box;
@@ -14,43 +15,56 @@ article {
   margin-left: auto;
   margin-right: auto;
 }
-.article__description{
-    color: #fff;;
-    text-align: left;
+.article__description {
+  color: #fff;
+  text-align: left;
 }
 .article__title {
-    color: #D00000;
-  }
+  color: #1ba788;
+}
 .footer {
-    background: #8F91A2;
+  background: #8f91a2;
 }
 .footer__description {
-    color: azure;
+  color: azure;
 }
 .footer__link {
-    color: #0b7189;
-  }
-.main-header {
-    color: #0EAD69;
-    box-sizing: border-box;
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-}
-.navigation {
-    background: #010111;
-}
-.navigation__link{
   color: #0b7189;
 }
+.header {
+  background: rgba(1, 1, 17,0.9);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+}
+.main-header {
+  color: #0ead69;
+  box-sizing: border-box;
+  max-width: 1000px;
+  margin-top: 80px;;
+  margin-left: auto;
+  margin-right: auto;
+}
+.navigation {
+  padding: 20px;
+  box-sizing: border-box;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.navigation__link {
+  color: #d00000;
+  padding-right: 30px;
+  font-weight: bold;
+}
 .section {
-    box-sizing: border-box;
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
+  box-sizing: border-box;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .section__title {
   color: #dff3e4;
 }
-
