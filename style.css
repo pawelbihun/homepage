@@ -30,15 +30,26 @@ article {
 .footer__link {
     color: #0b7189;
   }
+.main-header {
+    color: #0EAD69;
+    box-sizing: border-box;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
 .navigation {
     background: #010111;
 }
 .navigation__link{
   color: #0b7189;
 }
-.main-header {
-  color: #62726f;
+.section {
+    box-sizing: border-box;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 .section__title {
   color: #dff3e4;
 }
