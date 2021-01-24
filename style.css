@@ -5,6 +5,15 @@ body {
 article {
   background: #2e1760;
 }
+.footer {
+    background: #8F91A2;
+}
+.footer__description {
+    color: azure;
+}
+.footer__link {
+    color: #0b7189;
+  }
 .navigation {
     background: #010111;
 }
@@ -20,7 +29,3 @@ h2 {
 h3 {
   color: #62726f;
 }
-.footer-link {
-  color: #0b7189;
-}
-
