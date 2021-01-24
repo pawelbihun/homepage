@@ -1,25 +1,26 @@
 body {
-    background: #171738;
-    color: white;
+  background: #171738;
+  color: white;
 }
 article {
-    background: #2E1760;
+  background: #2e1760;
 }
-.nav-link {
-    color: #0B7189;
-}
-h1{
-    color: #62726f;
-}
-h2 {
-    color: #DFF3E4;
-}
-h3 {
-    color: #62726f;
-}
-.footer-link {
-    color: #0B7189;
-}
-.top-header {
+.navigation {
     background: #010111;
 }
+.navigation__link{
+  color: #0b7189;
+}
+h1 {
+  color: #62726f;
+}
+h2 {
+  color: #dff3e4;
+}
+h3 {
+  color: #62726f;
+}
+.footer-link {
+  color: #0b7189;
+}
+

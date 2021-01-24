@@ -1,109 +1,144 @@
 <!DOCTYPE html>
 <html lang="pl">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Page</title>
-    <link href="style.css" rel="stylesheet" type="text/css">
-</head>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
 
-<body>
-    <header class="top-header">
-        <nav>
-            <a class="nav-link" href="index.html">Strona główna</a>
-            <a class="nav-link" href="about-html.html">HTML</a>
-            <a class="nav-link" href="about-css.html">CSS</a>
-            <a class="nav-link" href="about-js.html">Java Script</a>
-        </nav>
+  <body>
+    <header class="header">
+      <nav class="navigation">
+        <a class="navigation__link" href="index.html">Strona główna</a>
+        <a class="navigation__link" href="about-html.html">HTML</a>
+        <a class="navigation__link" href="about-css.html">CSS</a>
+        <a class="navigation__link" href="about-js.html">Java Script</a>
+      </nav>
     </header>
 
     <main>
-        <header id="top_header">
-            <h1>Java Script</h1>
-        </header>
+      <header id="top_header">
+        <h1>Java Script</h1>
+      </header>
 
-        <section>
-            <h2>Wprowadzenie</h2>
-            <p> JavaScript (w skrócie JS) – skryptowy język programowania, stworzony przez firmę Netscape,
-                najczęściej stosowany na stronach internetowych. Twórcą JavaScriptu jest Brendan Eich[4]. W połowie
-                lat 90. XX wieku organizacja ECMA wydała na podstawie JavaScriptu standard języka skryptowego o
-                nazwie ECMAScript, aktualnie rozwijaniem tego standardu zajmuje się komisja TC39.</p>
-            <p>Najczęściej spotykanym zastosowaniem języka JavaScript są strony internetowe. Skrypty te służą
-                najczęściej do zapewnienia interakcji poprzez reagowanie na zdarzenia, walidacji danych
-                wprowadzanych w formularzach lub tworzenia złożonych efektów wizualnych. Skrypty JavaScriptu
-                uruchamiane przez strony internetowe mają znacznie ograniczony dostęp do komputera użytkownika. Po
-                stronie serwera JavaScript może działać w postaci node.js lub Ringo.</p>
-            <p>W języku JavaScript można także pisać pełnoprawne aplikacje. Fundacja Mozilla udostępnia środowisko
-                złożone z technologii takich jak XUL, XBL, XPCOM oraz JSLib. Umożliwiają one tworzenie
-                korzystających z zasobów systemowych aplikacji o graficznym interfejsie użytkownika dopasowującym
-                się do danej platformy. Przykładem aplikacji napisanych z użyciem JS i XUL może być klient IRC o
-                nazwie ChatZilla, domyślnie dołączony do pakietu Mozilla. Microsoft udostępnia biblioteki
-                umożliwiające tworzenie aplikacji JScript jako część środowiska Windows Scripting Host. Ponadto
-                JScript.NET jest jednym z podstawowych języków środowiska .NET. Istnieje także stworzone przez IBM
-                środowisko SashXB dla systemu Linux, które umożliwia tworzenie w języku JavaScript aplikacji
-                korzystających z GTK+, GNOME i OpenLDAP. Platforma Node.js umożliwia pisanie aplikacji wiersza
-                poleceń oraz aplikacji serwerowych. Node.js używany jest także w środowisku Electron, który
-                umożliwia pisanie aplikacji GUI. Język JavaScript używany jest także na urządzeniach internetu
-                rzeczy, robotów czy układów takich jak Arduino poprzez bibliotekę Johnny-Five.</p>
-        </section>
+      <section>
+        <h2>Wprowadzenie</h2>
+        <p>
+          JavaScript (w skrócie JS) – skryptowy język programowania, stworzony
+          przez firmę Netscape, najczęściej stosowany na stronach internetowych.
+          Twórcą JavaScriptu jest Brendan Eich[4]. W połowie lat 90. XX wieku
+          organizacja ECMA wydała na podstawie JavaScriptu standard języka
+          skryptowego o nazwie ECMAScript, aktualnie rozwijaniem tego standardu
+          zajmuje się komisja TC39.
+        </p>
+        <p>
+          Najczęściej spotykanym zastosowaniem języka JavaScript są strony
+          internetowe. Skrypty te służą najczęściej do zapewnienia interakcji
+          poprzez reagowanie na zdarzenia, walidacji danych wprowadzanych w
+          formularzach lub tworzenia złożonych efektów wizualnych. Skrypty
+          JavaScriptu uruchamiane przez strony internetowe mają znacznie
+          ograniczony dostęp do komputera użytkownika. Po stronie serwera
+          JavaScript może działać w postaci node.js lub Ringo.
+        </p>
+        <p>
+          W języku JavaScript można także pisać pełnoprawne aplikacje. Fundacja
+          Mozilla udostępnia środowisko złożone z technologii takich jak XUL,
+          XBL, XPCOM oraz JSLib. Umożliwiają one tworzenie korzystających z
+          zasobów systemowych aplikacji o graficznym interfejsie użytkownika
+          dopasowującym się do danej platformy. Przykładem aplikacji napisanych
+          z użyciem JS i XUL może być klient IRC o nazwie ChatZilla, domyślnie
+          dołączony do pakietu Mozilla. Microsoft udostępnia biblioteki
+          umożliwiające tworzenie aplikacji JScript jako część środowiska
+          Windows Scripting Host. Ponadto JScript.NET jest jednym z podstawowych
+          języków środowiska .NET. Istnieje także stworzone przez IBM środowisko
+          SashXB dla systemu Linux, które umożliwia tworzenie w języku
+          JavaScript aplikacji korzystających z GTK+, GNOME i OpenLDAP.
+          Platforma Node.js umożliwia pisanie aplikacji wiersza poleceń oraz
+          aplikacji serwerowych. Node.js używany jest także w środowisku
+          Electron, który umożliwia pisanie aplikacji GUI. Język JavaScript
+          używany jest także na urządzeniach internetu rzeczy, robotów czy
+          układów takich jak Arduino poprzez bibliotekę Johnny-Five.
+        </p>
+      </section>
 
-        <section>
-            <h2>Więcej informacji</h2>
-            <article>
-                <h3>Osadzenie</h3>
-                <p>W języku HTML za umieszczanie skryptów JS odpowiedzialny jest element <b>script</b> z opcjonalnymi
-                    argumentami type o wartości <b>text/javascript</b> i language o wartości javascript.</p>
-                <p>Jeżeli kod znajduje się w dokumencie XHTML, w celu uniknięcia zinterpretowania niektórych operatorów
-                    jako elementów składni języka należy otoczyć skrypt sekcją CDATA lub zapisać je w postaci encji.
-                    W XHTML nie można używać argumentu language w znaczeniu określenia wersji języka JS (atrybut, jeżeli
-                    jest użyty, powinien przyjąć dwuznakowe wartości opisane standardem ISO 639, np. EN, DE, PL).</p>
-                <p>Zewnętrzne skrypty dodawane są także przy użyciu powyższego znacznika, uwzględniając jedynie parametr
-                    src z nazwą pliku zawierającego kod skryptu. Typ MIME dla samodzielnych plików JavaScript to
-                    <b>application/javascript</b> lub przestarzały <b>text/javascript</b>
-                </p>
-            </article>
-            <article>
-                <h3>Kompilatory</h3>
-                <p>Przeglądarki oraz język JavaScript stały się platformą do obsługi innych języków. Istnieją
-                    kompilatory, które konwertują pliki innego języka na JavaScript. Z najbardziej znanych można
-                    wymienić:<br>
+      <section>
+        <h2>Więcej informacji</h2>
+        <article>
+          <h3>Osadzenie</h3>
+          <p>
+            W języku HTML za umieszczanie skryptów JS odpowiedzialny jest
+            element <b>script</b> z opcjonalnymi argumentami type o wartości
+            <b>text/javascript</b> i language o wartości javascript.
+          </p>
+          <p>
+            Jeżeli kod znajduje się w dokumencie XHTML, w celu uniknięcia
+            zinterpretowania niektórych operatorów jako elementów składni języka
+            należy otoczyć skrypt sekcją CDATA lub zapisać je w postaci encji. W
+            XHTML nie można używać argumentu language w znaczeniu określenia
+            wersji języka JS (atrybut, jeżeli jest użyty, powinien przyjąć
+            dwuznakowe wartości opisane standardem ISO 639, np. EN, DE, PL).
+          </p>
+          <p>
+            Zewnętrzne skrypty dodawane są także przy użyciu powyższego
+            znacznika, uwzględniając jedynie parametr src z nazwą pliku
+            zawierającego kod skryptu. Typ MIME dla samodzielnych plików
+            JavaScript to <b>application/javascript</b> lub przestarzały
+            <b>text/javascript</b>
+          </p>
+        </article>
+        <article>
+          <h3>Kompilatory</h3>
+          <p>
+            Przeglądarki oraz język JavaScript stały się platformą do obsługi
+            innych języków. Istnieją kompilatory, które konwertują pliki innego
+            języka na JavaScript. Z najbardziej znanych można wymienić:<br />
 
-                    CoffeeScript<br>
-                    Dart<br>
-                    TypeScript<br>
-                    ClojureScript</p>
-                <p>Istnieją także transpilatory nowszej wersji języka, na wersje starsze, które będą obsługiwane przez
-                    większą liczbę przeglądarek. Dzięki temu można korzystać z nowości, dodanych do języka zanim zostaną
-                    dodane przez przeglądarki. Przykładem takiego narzędzia jest Babel.</p>
-            </article>
-            <article>
-                <h3>Zobacz też</h3>
-                <p> Składnia Javascriptu<br>
-                    WebAssembly<br>
-                    JSON (JavaScript Object Notation)<br>
-                    Szczególne zastosowania JavaScriptu:<br>
-                    DOM – obiektowy model dokumentu<br>
-                    DHTML – modyfikacja elementów dokumentu<br>
-                    XMLHttpRequest – pobieranie zewnętrznych dokumentów</p>
-            </article>
-        </section>
-
-
-
+            CoffeeScript<br />
+            Dart<br />
+            TypeScript<br />
+            ClojureScript
+          </p>
+          <p>
+            Istnieją także transpilatory nowszej wersji języka, na wersje
+            starsze, które będą obsługiwane przez większą liczbę przeglądarek.
+            Dzięki temu można korzystać z nowości, dodanych do języka zanim
+            zostaną dodane przez przeglądarki. Przykładem takiego narzędzia jest
+            Babel.
+          </p>
+        </article>
+        <article>
+          <h3>Zobacz też</h3>
+          <p>
+            Składnia Javascriptu<br />
+            WebAssembly<br />
+            JSON (JavaScript Object Notation)<br />
+            Szczególne zastosowania JavaScriptu:<br />
+            DOM – obiektowy model dokumentu<br />
+            DHTML – modyfikacja elementów dokumentu<br />
+            XMLHttpRequest – pobieranie zewnętrznych dokumentów
+          </p>
+        </article>
+      </section>
     </main>
 
     <footer>
-        <p><a class="footer-link" href="#top_header">Strona domowa</a> <em>Paula Bipsum</em> o poznawanych technologiach
-            informatycznych. Strona developerska - tworzona w
-            celu poznawania terchnologi.<br>
-            Treści artykułów pobrane z <a class="footer-link"
-                href="https://pl.wikipedia.org/wiki/Wikipedia:Strona_g%C5%82%C3%B3wna">Wikipedii</a>, poddane
-            minimalnym zmianom.<br>
-            Pomysł na podstawie kursu <a class="footer-link" href="https://cotenfrontend.pl/">"WTF - Co ten
-                frontend"</a> który
-            prowadził Maciej Korsan.</p>
+      <p>
+        <a class="footer-link" href="#top_header">Strona domowa</a>
+        <em>Paula Bipsum</em> o poznawanych technologiach informatycznych.
+        Strona developerska - tworzona w celu poznawania terchnologi.<br />
+        Treści artykułów pobrane z
+        <a
+          class="footer-link"
+          href="https://pl.wikipedia.org/wiki/Wikipedia:Strona_g%C5%82%C3%B3wna"
+          >Wikipedii</a
+        >, poddane minimalnym zmianom.<br />
+        Pomysł na podstawie kursu
+        <a class="footer-link" href="https://cotenfrontend.pl/"
+          >"WTF - Co ten frontend"</a
+        >
+        który prowadził Maciej Korsan.
+      </p>
     </footer>
-</body>
-
+  </body>
 </html>
