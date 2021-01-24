@@ -1,10 +1,26 @@
 body {
-  background: #171738;
+  background: #204B57;
   color: white;
 }
 article {
-  background: #2e1760;
+  /*background: #2e1760;*/
+  /*background: #FFC6AC;*/
+  box-sizing: border-box;
+  max-width: 1000px;
+  padding: 16px;
+  margin-bottom: 20px;
+  border: 3px dotted #4becec;
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
+.article__description{
+    color: #fff;;
+    text-align: left;
+}
+.article__title {
+    color: #D00000;
+  }
 .footer {
     background: #8F91A2;
 }
@@ -20,12 +36,10 @@ article {
 .navigation__link{
   color: #0b7189;
 }
-h1 {
+.main-header {
   color: #62726f;
 }
-h2 {
+.section__title {
   color: #dff3e4;
 }
-h3 {
-  color: #62726f;
-}
+
