@@ -18,13 +18,13 @@
     </header>
 
     <main>
-      <header id="top_header">
+      <header id="top_header" class="main-header">
         <h1>Java Script</h1>
       </header>
 
-      <section>
-        <h2>Wprowadzenie</h2>
-        <p>
+      <section class="section">
+        <h2 class="section__title">Wprowadzenie</h2>
+        <p class="section__description">
           JavaScript (w skrócie JS) – skryptowy język programowania, stworzony
           przez firmę Netscape, najczęściej stosowany na stronach internetowych.
           Twórcą JavaScriptu jest Brendan Eich[4]. W połowie lat 90. XX wieku
@@ -32,7 +32,7 @@
           skryptowego o nazwie ECMAScript, aktualnie rozwijaniem tego standardu
           zajmuje się komisja TC39.
         </p>
-        <p>
+        <p class="section__description">
           Najczęściej spotykanym zastosowaniem języka JavaScript są strony
           internetowe. Skrypty te służą najczęściej do zapewnienia interakcji
           poprzez reagowanie na zdarzenia, walidacji danych wprowadzanych w
@@ -41,7 +41,7 @@
           ograniczony dostęp do komputera użytkownika. Po stronie serwera
           JavaScript może działać w postaci node.js lub Ringo.
         </p>
-        <p>
+        <p class="section__description">
           W języku JavaScript można także pisać pełnoprawne aplikacje. Fundacja
           Mozilla udostępnia środowisko złożone z technologii takich jak XUL,
           XBL, XPCOM oraz JSLib. Umożliwiają one tworzenie korzystających z
@@ -62,16 +62,16 @@
         </p>
       </section>
 
-      <section>
-        <h2>Więcej informacji</h2>
-        <article>
-          <h3>Osadzenie</h3>
-          <p>
+      <section class="section">
+        <h2 class="section__title">Więcej informacji</h2>
+        <article class="article">
+          <h3 class="article__title">Osadzenie</h3>
+          <p class="article__description">
             W języku HTML za umieszczanie skryptów JS odpowiedzialny jest
             element <b>script</b> z opcjonalnymi argumentami type o wartości
             <b>text/javascript</b> i language o wartości javascript.
           </p>
-          <p>
+          <p class="article__description">
             Jeżeli kod znajduje się w dokumencie XHTML, w celu uniknięcia
             zinterpretowania niektórych operatorów jako elementów składni języka
             należy otoczyć skrypt sekcją CDATA lub zapisać je w postaci encji. W
@@ -79,7 +79,7 @@
             wersji języka JS (atrybut, jeżeli jest użyty, powinien przyjąć
             dwuznakowe wartości opisane standardem ISO 639, np. EN, DE, PL).
           </p>
-          <p>
+          <p class="article__description">
             Zewnętrzne skrypty dodawane są także przy użyciu powyższego
             znacznika, uwzględniając jedynie parametr src z nazwą pliku
             zawierającego kod skryptu. Typ MIME dla samodzielnych plików
@@ -87,9 +87,10 @@
             <b>text/javascript</b>
           </p>
         </article>
-        <article>
-          <h3>Kompilatory</h3>
-          <p>
+
+        <article class="article">
+          <h3 class="article__title">Kompilatory</h3>
+          <p class="article__description">
             Przeglądarki oraz język JavaScript stały się platformą do obsługi
             innych języków. Istnieją kompilatory, które konwertują pliki innego
             języka na JavaScript. Z najbardziej znanych można wymienić:<br />
@@ -99,7 +100,7 @@
             TypeScript<br />
             ClojureScript
           </p>
-          <p>
+          <p class="article__description">
             Istnieją także transpilatory nowszej wersji języka, na wersje
             starsze, które będą obsługiwane przez większą liczbę przeglądarek.
             Dzięki temu można korzystać z nowości, dodanych do języka zanim
@@ -107,9 +108,10 @@
             Babel.
           </p>
         </article>
-        <article>
-          <h3>Zobacz też</h3>
-          <p>
+
+        <article class="article">
+          <h3 class="article__title">Zobacz też</h3>
+          <p class="article__description">
             Składnia Javascriptu<br />
             WebAssembly<br />
             JSON (JavaScript Object Notation)<br />
