@@ -34,3 +34,22 @@ function createContent(querySelectorContent, content){
     element.innerHTML = content; 
 }
 createContent('.article__description--js', 'Zostałem uzupełniony java scriptem :)');
+
+const deathStar = {
+    diamnater: 120000,
+    fire: (target) => {
+        console.log(`${target} destroyed !`)
+    },
+    isOperating: true,
+    name: 'Death Star',
+    levels: 357,
+    population: 10000,
+    isLightOn: true,
+    commander: {
+        name: 'Darth Vader',
+        age: 44
+    }
+}
+
+console.log(`The commander of ${deathStar.name} is ${deathStar.commander.name}.`);
+deathStar.fire('rebel space ship');
