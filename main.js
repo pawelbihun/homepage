@@ -19,10 +19,15 @@ newSection.innerHTML = `<article class="article">
                     </p>`;
 
 
-function greet (age, firstName){
+function greetOld (age, firstName){
     console.log(`Hi!, my name is ${firstName} and I am ${age} years old !`);
 }
-greet(20, 'Paul')
+greetOld(20, 'Paul')
+
+const greet = (age, firstName) => {
+    console.log(`Hi!, my name is ${firstName} and I am ${age} years old !`);
+}
+greet(24, 'Adam')
 
 function createContent(querySelectorContent, content){
     const element = document.querySelector(querySelectorContent);
