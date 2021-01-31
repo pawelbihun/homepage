@@ -1,8 +1,7 @@
 const firstName = "Paweł";
 const age = 30;
 
-console.log(firstName, age);
-console.log(`Hi!, my name is ${firstName} and I am ${age} years!`);
+
 
 const heading = document.querySelector('.main-header--js');
 heading.innerHTML = '<h1>Header zmieniony przez JS<h1>';
@@ -18,4 +17,15 @@ newSection.innerHTML = `<article class="article">
                     standard języka skryptowego o nazwie ECMAScript, aktualnie
                     rozwijaniem tego standardu zajmuje się komisja TC39.
                     </p>`;
-console.log(newSection);
+
+
+function greet (age, firstName){
+    console.log(`Hi!, my name is ${firstName} and I am ${age} years old !`);
+}
+greet(20, 'Paul')
+
+function createContent(querySelectorContent, content){
+    const element = document.querySelector(querySelectorContent);
+    element.innerHTML = content; 
+}
+createContent('.article__description--js', 'Zostałem uzupełniony java scriptem :)');
