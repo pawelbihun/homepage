@@ -1,10 +1,8 @@
 const firstName = "Paweł";
 const age = 30;
 
-
-
-const heading = document.querySelector('.main-header--js');
-heading.innerHTML = '<h1>Header zmieniony przez JS<h1>';
+//const heading = document.querySelector('.main-header--js');
+//heading.innerHTML = '<h1>Header zmieniony przez JS<h1>';
 
 const newSection = document.querySelector('.section--js');
 newSection.innerHTML = `<article class="article">
@@ -33,7 +31,7 @@ function createContent(querySelectorContent, content){
     const element = document.querySelector(querySelectorContent);
     element.innerHTML = content; 
 }
-createContent('.article__description--js', 'Zostałem uzupełniony java scriptem :)');
+createContent('.article__description--js', 'Ten znacznik został uzupełniony java scriptem :) - sprawdź czy istnieje w źródle strony - ^U');
 
 const deathStar = {
     diamnater: 120000,
