@@ -10,7 +10,7 @@ body {
   max-width: 1000px;
   padding: 16px;
   margin-bottom: 20px;
-  border: 3px dotted #4becec;
+  border: 1px dotted #4becec;
   border-radius: 20px;
   margin-left: auto;
   margin-right: auto;
@@ -23,9 +23,9 @@ body {
   color: #1ba788;
 }
 .footer {
-    background: darkcyan;
+  background: darkcyan;
   max-width: 1000px;
-  margin-top: 80px;;
+  margin-top: 80px;
   margin-left: auto;
   margin-right: auto;
   padding: 10px;
@@ -41,17 +41,20 @@ body {
   color: #113035;
 }
 .header {
-  background: rgba(1, 1, 17,0.9);
+  background: rgba(1, 1, 17, 0.9);
   position: fixed;
   top: 0px;
   left: 0px;
   width: 100vw;
 }
+.list {
+  list-style: upper-roman;
+}
 .main-header {
   color: #0ead69;
   box-sizing: border-box;
   max-width: 1000px;
-  margin-top: 90px;;
+  margin-top: 90px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -74,7 +77,24 @@ body {
   margin-right: auto;
   padding-top: 30px;
 }
-
 .section__title {
   color: #dff3e4;
+}
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.table__caption {
+  font-size: large;
+  padding: 15px;
+}
+.table__td {
+  color: #fff;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+.table__th {
+  color: #75eed4;
+  border: 1px solid #ccc;
+  padding: 10px 0px;
 }
