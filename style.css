@@ -5,7 +5,9 @@ html {
   box-sizing: inherit;
 }
 body {
-  background: #204b57;
+  /* background: #204b57; */
+  background: rgb(2,0,36);
+  background: linear-gradient(120deg, rgba(2,0,36,1) 0%, rgba(32,75,87,1) 51%, rgba(0,212,255,1) 100%); 
   color: white;
   position: relative;
 }
