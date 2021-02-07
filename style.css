@@ -11,6 +11,9 @@ body {
   color: white;
   position: relative;
 }
+main {
+  padding: 5px;
+}
 .article {
   /*background: #2e1760;*/
   /*background: #FFC6AC;*/
@@ -75,6 +78,7 @@ body {
   display: flex;
   /* flex-direction: row;
   flex-wrap: nowrap; */
+  /* flex-flow: value value == flex-direction: value + flex-wrap: value */
   flex-flow: row nowrap;
   justify-content: space-around;
 
