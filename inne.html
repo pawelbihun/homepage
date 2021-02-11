@@ -50,6 +50,16 @@
                 />
               </label>
             </div>
+            <div>
+              <label for="email">Podaj e-mail:</label>
+              <input
+                class="form__item"
+                type="email"
+                placeholder="Wpisz swoje e-mail"
+                id="email"
+                name="email"
+              />
+            </div>
             <fieldset class="form__fieldset">
               <legend class="form__legend">Adres</legend>
               <div>
@@ -82,6 +92,16 @@
                   name="city"
                 />
               </div>
+              <div>
+                <label for="postCode">Kod pocztowy</label>
+                <input
+                  class="form__item"
+                  text="text"
+                  placeholder="Wpisz kod pocztowy"
+                  id="postCode"
+                  name="postCode"
+                />
+              </div>
             </fieldset>
             <fieldset class="form__fieldset">
               <legend class="form__legend">
@@ -90,7 +110,8 @@
               <div>
                 <label
                   ><input
-                    name="frameworkJS"
+                    class="form__item--radio"
+                    name="preferedPage"
                     type="radio"
                     value="homePage"
                   />Strona główna</label
@@ -99,7 +120,8 @@
               <div>
                 <label
                   ><input
-                    name="frameworkJS"
+                    class="form__item--radio"
+                    name="preferedPage"
                     type="radio"
                     value="about-html"
                   />Strona z HTML</label
@@ -108,7 +130,8 @@
               <div>
                 <label
                   ><input
-                    name="frameworkJS"
+                    class="form__item--radio"
+                    name="preferedPage"
                     type="radio"
                     value="about-css"
                   />Strona z CSS</label
@@ -117,7 +140,8 @@
               <div>
                 <label
                   ><input
-                    name="frameworkJS"
+                    class="form__item--radio"
+                    name="preferedPage"
                     type="radio"
                     value="about-js"
                   />Strona z JS</label
@@ -126,7 +150,8 @@
               <div>
                 <label
                   ><input
-                    name="frameworkJS"
+                    class="form__item--radio"
+                    name="preferedPage"
                     type="radio"
                     value="inne"
                   />Strona z różnościami</label
@@ -134,7 +159,22 @@
               </div>
             </fieldset>
             <div>
-              <label><input name="agreement" type="checkbox" value="agree">Wyrażam zgodę na przetwarzanie moich danych osobowych zgodnie z RODO</label>
+              <label
+                ><input
+                  class="form__checkbox"
+                  name="agreement"
+                  type="checkbox"
+                  value="agree"
+                />Wyrażam zgodę na przetwarzanie moich danych osobowych zgodnie
+                z RODO</label
+              >
+            </div>
+            <div>
+              <input
+                class="form__submit"
+                type="submit"
+                value="Wyślij formularz"
+              />
             </div>
           </form>
         </article>

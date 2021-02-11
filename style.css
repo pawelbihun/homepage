@@ -62,6 +62,9 @@ main {
 .footer__link {
   color: #113035;
 }
+.form__checkbox {
+  margin-right: 5px;
+}
 .form__fieldset {
   margin: 20px 0px;
 }
@@ -70,11 +73,16 @@ main {
   width: 100%;
   margin-bottom: 15px;
 }
+.form__item--radio {
+  margin-right: 8px;
+}
 .form__legend {
   font-size: 19px;
   margin-bottom: 15px;
 }
-
+.form__submit {
+  margin: 15px 0px;
+}
 .hamburger-menu {
   position: absolute;
   top: 16px;
