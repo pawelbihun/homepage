@@ -31,6 +31,7 @@
             <div>
               <label for="name">Podaj imię:</label>
               <input
+              required
                 class="form__item"
                 type="text"
                 placeholder="Wpisz swoje imię"
@@ -53,6 +54,7 @@
             <div>
               <label for="email">Podaj e-mail:</label>
               <input
+              required
                 class="form__item"
                 type="email"
                 placeholder="Wpisz swoje e-mail"
@@ -100,6 +102,8 @@
                   placeholder="Wpisz kod pocztowy"
                   id="postCode"
                   name="postCode"
+                  pattern="\d{2}-\d{3}"
+                  required
                 />
               </div>
             </fieldset>
@@ -161,6 +165,7 @@
             <div>
               <label
                 ><input
+                required
                   class="form__checkbox"
                   name="agreement"
                   type="checkbox"
