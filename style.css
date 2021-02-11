@@ -17,6 +17,7 @@ body {
   );
   color: white;
   position: relative;
+  min-height: 100vh;
 }
 main {
   padding: 5px;
@@ -25,7 +26,6 @@ main {
   /*background: #2e1760;*/
   /*background: #FFC6AC;*/
   /*box-sizing: border-box;*/
-  max-width: 1000px;
   padding: 16px;
   margin-bottom: 20px;
   border: 1px dotted #4becec;
@@ -62,6 +62,19 @@ main {
 .footer__link {
   color: #113035;
 }
+.form__fieldset {
+  margin: 20px 0px;
+}
+.form__item {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.form__legend {
+  font-size: 19px;
+  margin-bottom: 15px;
+}
+
 .hamburger-menu {
   position: absolute;
   top: 16px;
@@ -148,10 +161,10 @@ main {
     margin-bottom: 20px;
     margin-left: 0px;
     margin-right: 0px;
-    
   }
   .article-special {
     flex-direction: row;
+    padding-top: 20px;
   }
   .hamburger-menu {
     display: none;
