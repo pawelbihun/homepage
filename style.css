@@ -122,6 +122,7 @@ main {
   color: #d00000;
   font-weight: bold;
   padding: 5px;
+  text-decoration: none;
 }
 .section {
   display: flex;
