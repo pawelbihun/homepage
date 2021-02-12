@@ -164,7 +164,7 @@ main {
   .article {
     box-sizing: border-box;
     max-width: 1000px;
-    min-width: 758px;
+    /* min-width: 758px; */
     padding: 16px;
     margin-bottom: 20px;
     margin-left: 0px;
@@ -175,8 +175,12 @@ main {
     padding-top: 20px;
   }
   .form__item {
-
     width: 300px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 16px;
   }
   .hamburger-menu {
     display: none;
@@ -222,11 +226,9 @@ main {
   .section__title {
 
   }
-  
-
 }
 @media screen and (min-width: 1024px) {
-  .article {
-    min-width: 1004px;
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }

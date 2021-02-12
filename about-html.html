@@ -48,123 +48,127 @@
 
       <section class="section">
         <h2 class="section__title">Więcej informacji</h2>
-        <article class="article">
-          <h3 class="article__title">Znaczniki (tagi)</h3>
-          <p class="article__description">
-            Tag (znacznik) – znak lub słowo kluczowe przypisane do określonego
-            fragmentu informacji, na przykład tekstu lub pliku multimedialnego.
-            Tagi są powszechnie stosowane w bazach danych oraz przy opisywaniu
-            informacji tekstowej.
-          </p>
-          <p class="article__description">
-            W przypadku danych tekstowych znaczniki są stosowane do
-            klasyfikowania fragmentów tekstu. Znaczniki, w odróżnieniu od komend
-            programów komputerowych, są wplecione bezpośrednio w ciało
-            informacji. Nie są one „wykonywane” i nie stanowią „poleceń”, lecz
-            są osobną formą danych, umożliwiającą wykonywanie określonych
-            działań na pozostałej informacji. Tagi mogą tworzyć struktury
-            hierarchiczne oraz precyzować swoje znaczenie poprzez atrybuty.
-          </p>
-          <p class="article__description">
-            Standaryzowane zbiory tagów oraz zasady ich stosowania to języki
-            znaczników. Niektóre meta-języki znaczników (np. SGML lub XML) same
-            nie mają znaczenia i służą jedynie ujednoliceniu zapisu kolejnych
-            języków. Inne natomiast tworzone są z myślą o konkretnym
-            zastosowaniu, przykładowo język HTML służy wyłącznie tworzeniu stron
-            WWW, a język SVG – zapisowi grafiki wektorowej. Dzięki jednolitej
-            składni większość języków znaczników łatwo jest przekształcić w
-            pełne bazy danych lub formatować i prezentować dane na rozmaitych
-            urządzeniach.
-          </p>
-          <p class="article__description">
-            Znaczniki najczęściej są otoczone nawiasami ostrymi lub
-            prostokątnymi. Atrybuty najczęściej określone są za pomocą nazwy
-            oraz wartości otoczonej apostrofami lub cudzysłowami.
-          </p>
-        </article>
+        <div class="grid">
+          <article class="article">
+            <h3 class="article__title">Znaczniki (tagi)</h3>
+            <p class="article__description">
+              Tag (znacznik) – znak lub słowo kluczowe przypisane do określonego
+              fragmentu informacji, na przykład tekstu lub pliku
+              multimedialnego. Tagi są powszechnie stosowane w bazach danych
+              oraz przy opisywaniu informacji tekstowej.
+            </p>
+            <p class="article__description">
+              W przypadku danych tekstowych znaczniki są stosowane do
+              klasyfikowania fragmentów tekstu. Znaczniki, w odróżnieniu od
+              komend programów komputerowych, są wplecione bezpośrednio w ciało
+              informacji. Nie są one „wykonywane” i nie stanowią „poleceń”, lecz
+              są osobną formą danych, umożliwiającą wykonywanie określonych
+              działań na pozostałej informacji. Tagi mogą tworzyć struktury
+              hierarchiczne oraz precyzować swoje znaczenie poprzez atrybuty.
+            </p>
+            <p class="article__description">
+              Standaryzowane zbiory tagów oraz zasady ich stosowania to języki
+              znaczników. Niektóre meta-języki znaczników (np. SGML lub XML)
+              same nie mają znaczenia i służą jedynie ujednoliceniu zapisu
+              kolejnych języków. Inne natomiast tworzone są z myślą o konkretnym
+              zastosowaniu, przykładowo język HTML służy wyłącznie tworzeniu
+              stron WWW, a język SVG – zapisowi grafiki wektorowej. Dzięki
+              jednolitej składni większość języków znaczników łatwo jest
+              przekształcić w pełne bazy danych lub formatować i prezentować
+              dane na rozmaitych urządzeniach.
+            </p>
+            <p class="article__description">
+              Znaczniki najczęściej są otoczone nawiasami ostrymi lub
+              prostokątnymi. Atrybuty najczęściej określone są za pomocą nazwy
+              oraz wartości otoczonej apostrofami lub cudzysłowami.
+            </p>
+          </article>
 
-        <article class="article">
-          <h3 class="article__title">Atrybuty</h3>
-          <p class="article__description">
-            Większość atrybutów elementów składa się z par nazwa-wartość,
-            rozdzielonych znakiem "=", zawartych w znaczniku otwierającym
-            elementu, po jego nazwie. Wartość może być zawarta w pojedynczych
-            lub podwójnych cudzysłowach lub bez nich (o ile wartość nie zawiera
-            spacji). W przeciwieństwie do atrybutów w postaci par nazwa-wartość
-            istnieją atrybuty mające wpływ na element poprzez samo ich zawarcie
-            w znaczniku otwierającym (np. ismap atrybut dla znacznika img).
-          </p>
-          <p class="article__description">
-            Atrybut id nadaje elementowi unikatowy identyfikator. Może on zostać
-            użyty przez arkusze stylów do sprecyzowania wyglądu tego elementu
-            lub przez skrypty np. do zmiany jego zawartości. Atrybut class służy
-            do sklasyfikowania elementów dla celów prezentacyjnych.
-          </p>
-        </article>
+          <article class="article">
+            <h3 class="article__title">Atrybuty</h3>
+            <p class="article__description">
+              Większość atrybutów elementów składa się z par nazwa-wartość,
+              rozdzielonych znakiem "=", zawartych w znaczniku otwierającym
+              elementu, po jego nazwie. Wartość może być zawarta w pojedynczych
+              lub podwójnych cudzysłowach lub bez nich (o ile wartość nie
+              zawiera spacji). W przeciwieństwie do atrybutów w postaci par
+              nazwa-wartość istnieją atrybuty mające wpływ na element poprzez
+              samo ich zawarcie w znaczniku otwierającym (np. ismap atrybut dla
+              znacznika img).
+            </p>
+            <p class="article__description">
+              Atrybut id nadaje elementowi unikatowy identyfikator. Może on
+              zostać użyty przez arkusze stylów do sprecyzowania wyglądu tego
+              elementu lub przez skrypty np. do zmiany jego zawartości. Atrybut
+              class służy do sklasyfikowania elementów dla celów
+              prezentacyjnych.
+            </p>
+          </article>
 
-        <article class="article">
-          <h3 class="article__title">Typy danych</h3>
-          <p class="article__description">
-            HTML definiuje kilka typów danych, wprowadzanych m.in. jako wartości
-            elementów lub atrybutów. Są to m.in. skrypty (script data), dane
-            arkuszy stylów (stylesheet data), identyfikatory, nazwy, adresy URI,
-            liczby, jednostki miary długości, języki, deskryptory mediów,
-            kolory, kodowania znaków, data i czas, itp.
-          </p>
-        </article>
+          <article class="article">
+            <h3 class="article__title">Typy danych</h3>
+            <p class="article__description">
+              HTML definiuje kilka typów danych, wprowadzanych m.in. jako
+              wartości elementów lub atrybutów. Są to m.in. skrypty (script
+              data), dane arkuszy stylów (stylesheet data), identyfikatory,
+              nazwy, adresy URI, liczby, jednostki miary długości, języki,
+              deskryptory mediów, kolory, kodowania znaków, data i czas, itp.
+            </p>
+          </article>
 
-        <article class="article">
-          <h3 class="article__title">Deklaracja typu dokumentu</h3>
-          <p class="article__description">
-            Aby uaktywnić definicję typu dokumentu (DTD) do celów poprawnej
-            walidacji utworzonej strony, a także w celu uniknięcia działania
-            przeglądarek w trybie quirks, dokument powinien rozpoczynać się
-            deklaracją typu dokumentu (nieformalnie DOCTYPE). DTD, do którego
-            odwołuje się sekcja DOCTYPE, zawiera gramatykę i zasady
-            wykorzystywania znaczników w dokumencie podporządkowanemu
-            określonemu DTD. Większość graficznych przeglądarek korzysta z
-            sekcji DOCTYPE, a także innych dodatkowych informacji, warunkując
-            tryb renderowania danej strony.
-          </p>
-          <p class="article__description">
-            Przykład:<br />
-            !DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
-            "http://www.w3.org/TR/html4/strict.dtd"<br />
-            W HTML5:<br />
-            !DOCTYPE html
-          </p>
-        </article>
+          <article class="article">
+            <h3 class="article__title">Deklaracja typu dokumentu</h3>
+            <p class="article__description">
+              Aby uaktywnić definicję typu dokumentu (DTD) do celów poprawnej
+              walidacji utworzonej strony, a także w celu uniknięcia działania
+              przeglądarek w trybie quirks, dokument powinien rozpoczynać się
+              deklaracją typu dokumentu (nieformalnie DOCTYPE). DTD, do którego
+              odwołuje się sekcja DOCTYPE, zawiera gramatykę i zasady
+              wykorzystywania znaczników w dokumencie podporządkowanemu
+              określonemu DTD. Większość graficznych przeglądarek korzysta z
+              sekcji DOCTYPE, a także innych dodatkowych informacji, warunkując
+              tryb renderowania danej strony.
+            </p>
+            <p class="article__description">
+              Przykład:<br />
+              !DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+              "http://www.w3.org/TR/html4/strict.dtd"<br />
+              W HTML5:<br />
+              !DOCTYPE html
+            </p>
+          </article>
 
-        <article class="article">
-          <h3 class="article__title">Przykładowa tabela w HTML-u</h3>
-          <table class="table">
-            <caption class="table__caption">
-              3 podstawowe technologie frontendowe
-            </caption>
-            <thead>
-              <th class="table__th">HTML 5</th>
-              <th class="table__th">CSS 3</th>
-              <th class="table__th">JS - ES 6</th>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="table__td">Lorem</td>
-                <td class="table__td">Ipsum</td>
-                <td class="table__td">Dolor</td>
-              </tr>
-              <tr>
-                <td class="table__td">Ipsum</td>
-                <td class="table__td">Dolor</td>
-                <td class="table__td">Lorem</td>
-              </tr>
-              <tr>
-                <td class="table__td">Dolor</td>
-                <td class="table__td">Lorem</td>
-                <td class="table__td">Ipsum</td>
-              </tr>
-            </tbody>
-          </table>
-        </article>
+          <article class="article">
+            <h3 class="article__title">Przykładowa tabela w HTML-u</h3>
+            <table class="table">
+              <caption class="table__caption">
+                3 podstawowe technologie frontendowe
+              </caption>
+              <thead>
+                <th class="table__th">HTML 5</th>
+                <th class="table__th">CSS 3</th>
+                <th class="table__th">JS - ES 6</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="table__td">Lorem</td>
+                  <td class="table__td">Ipsum</td>
+                  <td class="table__td">Dolor</td>
+                </tr>
+                <tr>
+                  <td class="table__td">Ipsum</td>
+                  <td class="table__td">Dolor</td>
+                  <td class="table__td">Lorem</td>
+                </tr>
+                <tr>
+                  <td class="table__td">Dolor</td>
+                  <td class="table__td">Lorem</td>
+                  <td class="table__td">Ipsum</td>
+                </tr>
+              </tbody>
+            </table>
+          </article>
+        </div>
       </section>
     </main>
 

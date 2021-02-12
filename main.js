@@ -8,7 +8,8 @@ menu.addEventListener('click', (e) => {
 
 // uzupełnieni sekcji javascriptem
 const newSection = document.querySelector('.section--js');
-newSection.innerHTML = `<article class="article">
+newSection.innerHTML = `<h2 class="section__title">Uzupełnianie javascriptem</h2>
+                    <article class="article">
                     <h3 class="article__title">Java Script - Test selektora</h3>
                     <p class="article__description">
                     JavaScript (w skrócie JS) – skryptowy język programowania, stworzony
