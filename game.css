@@ -12,6 +12,11 @@ body {
   margin-right: auto;
   cursor: pointer;
 }
+.board--block {
+  background: none;
+  z-index: 10;
+  cursor:none;
+}
 .board__field {
   background: #fff;
   display: flex;
