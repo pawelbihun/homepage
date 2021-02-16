@@ -4,39 +4,81 @@ const CROSS = '<i class="fas fa-times"></i>';
 const board = document.querySelectorAll(".board__field");
 let round = 1;
 
-const boardShadow = [];
+const boardShadow = ["", "", "", "", "", "", "", "", ""];
+
+// console.log(boardShadow[3]);
+// boardShadow[3] = "X";
+// console.log(boardShadow[3]);
 
 // game logic
 board.forEach((field) =>
   field.addEventListener("click", (event) => {
     const name = event.target.className;
     const target = `.${name.substring(13)}`;
+    // targetShadow == field number
+    const targetShadow = name.substring(name.length - 1);
 
     if (isFieldEmpty(target)) {
       let player = round % 2;
       if (player === 0) {
         addSymbol(target, CROSS);
+        addToBoardShadow(targetShadow, "x");
       } else {
         addSymbol(target, CIRCLE);
+        addToBoardShadow(targetShadow, "o");
       }
+      checkWinner();
       round++;
+      changePlayer(round);
     } else {
-      alert(`To pole jest zajęte przez przeciwnika.\nSpróbuj inne.`)
+      alert(`To pole jest już zajęte.\nSpróbuj inne.`);
     }
 
-
-    changePlayer(round);
   })
 );
 // dokończyć
+
+function checkWinner() {
+  if (
+    (boardShadow[0] === "x" && boardShadow[1] === "x" && boardShadow[2] === "x") ||
+    (boardShadow[3] === "x" && boardShadow[4] === "x" && boardShadow[5] === "x" ||   boardShadow[6] === "x" && boardShadow[7] === "x" && boardShadow[8] === "x" ||
+    boardShadow[0] === "x" && boardShadow[3] === "x" && boardShadow[6] === "x" ||
+    boardShadow[1] === "x" && boardShadow[4] === "x" && boardShadow[7] === "x" ||
+    boardShadow[2] === "x" && boardShadow[5] === "x" && boardShadow[8] === "x" ||
+    boardShadow[0] === "x" && boardShadow[4] === "x" && boardShadow[8] === "x" ||
+    boardShadow[2] === "x" && boardShadow[4] === "x" && boardShadow[6] === "x")
+  ) {
+    console.log(`X wygrał!`);
+    addSymbol(`.game__winner`, `Wygrał gracz  ${CROSS}  !!!`);
+  } 
+  else if (
+    (boardShadow[0] === "o" && boardShadow[1] === "o" && boardShadow[2] === "o") ||
+    (boardShadow[3] === "o" && boardShadow[4] === "o" && boardShadow[5] === "o" ||                  boardShadow[6] === "o" && boardShadow[7] === "o" && boardShadow[8] === "o" ||
+     boardShadow[0] === "o" && boardShadow[3] === "o" && boardShadow[6] === "o" ||
+     boardShadow[1] === "o" && boardShadow[4] === "o" && boardShadow[7] === "o" ||
+     boardShadow[2] === "o" && boardShadow[5] === "o" && boardShadow[8] === "o" ||
+     boardShadow[0] === "o" && boardShadow[4] === "o" && boardShadow[8] === "o" ||
+     boardShadow[2] === "o" && boardShadow[4] === "o" && boardShadow[6] === "o")
+  ) {
+    console.log(`O wygrał!`);
+    addSymbol(`.game__winner`, `Wygrał gracz  ${CIRCLE}  !!!`);
+  } 
+}
+
+function addToBoardShadow(targetShadow, player) {
+  boardShadow[targetShadow] = player;
+}
+
 function isFieldEmpty(element) {
   let pattern = /\.board__field.*/;
   return pattern.test(element);
 }
+
 function addSymbol(querySelectorContent, content) {
   const element = document.querySelector(querySelectorContent);
   element.innerHTML = content;
 }
+
 function changePlayer(roundNumber) {
   const info = document.querySelector(".player");
   let player = roundNumber % 2;

@@ -29,6 +29,12 @@ body {
 .board__field:hover {
   background: #ddd;
 }
+.game__winner {
+  color: #f71010;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 900;
+}
 .main-header {
   text-align: center;
 }
