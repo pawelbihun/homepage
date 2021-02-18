@@ -50,3 +50,4 @@ newSection.innerHTML = `<h2 class="section__title">Uzupełnianie javascriptem</h
                     standard języka skryptowego o nazwie ECMAScript, aktualnie
                     rozwijaniem tego standardu zajmuje się komisja TC39.
                     </p>
+                    </article>`

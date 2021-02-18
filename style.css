@@ -37,6 +37,15 @@ main {
   color: #fff;
   text-align: left;
 }
+.article__description::before{
+  content: "";
+  display: inline-block;
+  background:crimson;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+
+}
 .article__title {
   color: #1ba788;
 }
@@ -171,6 +180,9 @@ main {
     margin-left: 0px;
     margin-right: 0px;
   }
+  .article--alone {
+    border: none;
+  }
   .article-special {
     flex-direction: row;
     padding-top: 20px;
@@ -224,12 +236,18 @@ main {
     padding: 0px 20px;
     order: 1;
   }
-  .section__title {
-
+  .section__title--alone{
+    width: 100vw;
   }
 }
 @media screen and (min-width: 1024px) {
   .grid {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+  .article--alone {
+    border: none;
+  }
+  .section__title--alone{
+    width: 100vw;
   }
 }
