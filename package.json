@@ -4,6 +4,8 @@
   "description": "my first website",
   "main": "main.js",
   "scripts": {
+    "sass": "npx node-sass -w scss/style.scss style.css",
+    "sass-g": "npx node-sass -w scss/game.scss game.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/pawelbihun/homepage/issues"
   },
-  "homepage": "https://github.com/pawelbihun/homepage#readme"
+  "homepage": "https://github.com/pawelbihun/homepage#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
 }

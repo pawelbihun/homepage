@@ -1,6 +1,6 @@
 body {
-  font-family: sans-serif;
-}
+  font-family: sans-serif; }
+
 .board {
   background: #444;
   max-width: 306px;
@@ -10,35 +10,31 @@ body {
   gap: 2px;
   margin-left: auto;
   margin-right: auto;
-  cursor: pointer;
-}
-.board--block {
-  background: none;
-  z-index: 10;
-  cursor:none;
-}
-.board__field {
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 60px;
-  font-weight: 900;
-  color: #222;
-}
-.board__field:hover {
-  background: #ddd;
-}
+  cursor: pointer; }
+  .board--block {
+    background: none;
+    z-index: 10;
+    cursor: none; }
+  .board__field {
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    font-weight: 900;
+    color: #222; }
+    .board__field:hover {
+      background: #ddd; }
+
 .game__winner {
   color: #f71010;
   text-align: center;
   font-size: 30px;
-  font-weight: 900;
-}
+  font-weight: 900; }
+
 .main-header {
-  text-align: center;
-}
+  text-align: center; }
+
 .player {
   text-align: center;
-  font-size: 20px;
-}
+  font-size: 20px; }

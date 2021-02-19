@@ -18,6 +18,14 @@ board.forEach((field) =>
     // targetShadow == field number
     const targetShadow = name.substring(name.length - 1);
 
+    console.log(targetShadow);
+    const isEmptyField = (targetShadow) => {
+      if (boardShadow[targetShadow] === "x" || boardShadow[targetShadow] === "o"){
+        return `coś jest`;
+      }
+    };
+    console.log(isEmptyField);
+
     if (isFieldEmpty(target)) {
       let player = round % 2;
       if (player === 0) {
@@ -27,11 +35,14 @@ board.forEach((field) =>
         addSymbol(target, CIRCLE);
         addToBoardShadow(targetShadow, "o");
       }
-      checkWinner();
+      console.log(boardShadow);
       round++;
+      checkWinner();
+      
       changePlayer(round);
     } else {
-      alert(`To pole jest już zajęte.\nSpróbuj inne.`);
+      //alert(`To pole jest już zajęte.\nSpróbuj inne.`);
+      console.log(`To pole jest już zajęte.\nSpróbuj inne.`);
     }
 
   })
