@@ -6,44 +6,32 @@ let round = 1;
 
 const boardShadow = ["", "", "", "", "", "", "", "", ""];
 
-// console.log(boardShadow[3]);
-// boardShadow[3] = "X";
-// console.log(boardShadow[3]);
-
 // game logic
 board.forEach((field) =>
   field.addEventListener("click", (event) => {
     const name = event.target.className;
-    const target = `.${name.substring(13)}`;
-    // targetShadow == field number
-    const targetShadow = name.substring(name.length - 1);
 
-    console.log(targetShadow);
-    const isEmptyField = (targetShadow) => {
-      if (boardShadow[targetShadow] === "x" || boardShadow[targetShadow] === "o"){
-        return `coś jest`;
-      }
-    };
-    console.log(isEmptyField);
-
-    if (isFieldEmpty(target)) {
-      let player = round % 2;
-      if (player === 0) {
-        addSymbol(target, CROSS);
-        addToBoardShadow(targetShadow, "x");
-      } else {
-        addSymbol(target, CIRCLE);
-        addToBoardShadow(targetShadow, "o");
-      }
-      console.log(boardShadow);
-      round++;
-      checkWinner();
-      
-      changePlayer(round);
+    if(name != "far fa-circle" && name !="fas fa-times"){
+      const target = `.${name.substring(13)}`;
+      // targetShadow == field number
+      const targetShadow = name.substring(name.length - 1);
+      if (isFieldEmpty(targetShadow)) {
+        let player = round % 2;
+        if (player === 0) {
+          addSymbol(target, CROSS);
+          addToBoardShadow(targetShadow, "x");
+        } else {
+          addSymbol(target, CIRCLE);
+          addToBoardShadow(targetShadow, "o");
+        }
+        round++;
+        checkWinner();
+        changePlayer(round);
+      } 
     } else {
-      //alert(`To pole jest już zajęte.\nSpróbuj inne.`);
-      console.log(`To pole jest już zajęte.\nSpróbuj inne.`);
-    }
+        alert(`To pole jest już zajęte.\nSpróbuj inne.`);
+        //console.log(`To pole jest już zajęte.\nSpróbuj inne.`);
+      }
 
   })
 );
@@ -81,8 +69,10 @@ function addToBoardShadow(targetShadow, player) {
 }
 
 function isFieldEmpty(element) {
-  let pattern = /\.board__field.*/;
-  return pattern.test(element);
+  if(boardShadow[element] == "x" || boardShadow[element] == "o"){
+    return false;
+  }
+  return true;
 }
 
 function addSymbol(querySelectorContent, content) {
