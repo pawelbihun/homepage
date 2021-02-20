@@ -9,6 +9,7 @@ const boardShadow = ["", "", "", "", "", "", "", "", ""];
 // game logic
 board.forEach((field) =>
   field.addEventListener("click", (event) => {
+    
     const name = event.target.className;
 
     if(name != "far fa-circle" && name !="fas fa-times"){
@@ -24,8 +25,9 @@ board.forEach((field) =>
           addSymbol(target, CIRCLE);
           addToBoardShadow(targetShadow, "o");
         }
-        round++;
         checkWinner();
+        round++;
+
         changePlayer(round);
       } 
     } else {
@@ -49,6 +51,7 @@ function checkWinner() {
   ) {
     console.log(`X wygrał!`);
     addSymbol(`.game__winner`, `Wygrał gracz  ${CROSS}  !!!`);
+    fieldBlocker();
   } 
   else if (
     (boardShadow[0] === "o" && boardShadow[1] === "o" && boardShadow[2] === "o") ||
@@ -61,6 +64,7 @@ function checkWinner() {
   ) {
     console.log(`O wygrał!`);
     addSymbol(`.game__winner`, `Wygrał gracz  ${CIRCLE}  !!!`);
+    fieldBlocker();
   } 
 }
 
@@ -88,4 +92,13 @@ function changePlayer(roundNumber) {
   } else {
     info.innerHTML = `Aktuany gracz: ${CIRCLE}`;
   }
+}
+
+function fieldBlocker(){
+  for(let i = 0; i < boardShadow.length; i++){
+    if(isFieldEmpty(i)){
+      boardShadow[i] = "o";
+    }
+  }
+  console.log(boardShadow);
 }
